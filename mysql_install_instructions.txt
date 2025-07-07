@@ -1,0 +1,24 @@
+MySQL Server and Client Installation Instructions (Debian/Ubuntu):
+
+1. Update package index:
+   sudo apt update
+
+2. Install MySQL server and client:
+   sudo apt install mysql-server mysql-client
+
+3. Start and enable MySQL service:
+   sudo systemctl start mysql
+   sudo systemctl enable mysql
+
+4. Secure MySQL installation (optional but recommended):
+   sudo mysql_secure_installation
+
+5. Verify MySQL service status:
+   sudo systemctl status mysql
+
+6. Connect to MySQL server:
+   mysql -u root -p
+
+Note: Adjust commands if using a different Linux distribution.
+
+If you cannot install MySQL server locally, consider using a remote MySQL server and update the environment variables in backend/config.py accordingly.
